@@ -52,6 +52,14 @@
     std-env "^3.7.0"
     swr "^2.2.0"
 
+"@clerk/themes@^2.1.40":
+  version "2.1.40"
+  resolved "https://registry.yarnpkg.com/@clerk/themes/-/themes-2.1.40.tgz#d1933624fd6bb075238822a539d8700da1c3a273"
+  integrity sha512-1Sl+rptRIwnUEexGY+ZxxPu3Y/JtyWVUPFlACqy5HRgaR50B86Zp3jkKpee9v+Jd8cFTfUBHJy7Dq0t8K1xG0Q==
+  dependencies:
+    "@clerk/types" "4.29.0"
+    tslib "2.4.1"
+
 "@clerk/types@4.29.0":
   version "4.29.0"
   resolved "https://registry.yarnpkg.com/@clerk/types/-/types-4.29.0.tgz#025dc7f8c0c4186da1a50c3ccce8fc05b7d5fbf2"
@@ -2347,6 +2355,11 @@ lucide-react@^0.454.0:
   version "0.454.0"
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.454.0.tgz#a81b9c482018720f07ead0503ae502d94d528444"
   integrity sha512-hw7zMDwykCLnEzgncEEjHeA6+45aeEzRYuKHuyRSOPkhko+J3ySGjGIzu+mmMfDFG1vazHepMaYFYHbTFAZAAQ==
+
+m@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/m/-/m-1.9.0.tgz#bd7e15e5fe960c3f410d327b91a9dc68c6e89eef"
+  integrity sha512-Lrq5A8PF9nSkWSIgsZLTAvcgI+9WjeGQmdHVnY7QUXiDMMIU0XbWFZDEhiMe1naYK6CVO0TlcBQXMoXit1mDdg==
 
 map-obj@^4.1.0:
   version "4.3.0"

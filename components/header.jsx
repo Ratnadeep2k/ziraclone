@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs"
+import { SignedIn, SignedOut, SignInButton, SignOutButton, UserButton } from "@clerk/nextjs"
 
 const Header =()=>{
     return <div>
@@ -6,6 +6,7 @@ const Header =()=>{
             <SignInButton/>
         </SignedOut>
         <SignedIn>
+            <UserButton />
             <SignOutButton/>
         </SignedIn>
     </div>
