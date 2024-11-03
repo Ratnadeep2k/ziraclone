@@ -2,13 +2,8 @@ import { SignedIn, SignedOut, SignInButton, SignOutButton, UserButton } from "@c
 
 const Header =()=>{
     return <div>
-        <SignedOut>
-            <SignInButton/>
-        </SignedOut>
-        <SignedIn>
-            <UserButton />
-            <SignOutButton/>
-        </SignedIn>
+        
+        <h1>Welcome to zira clone</h1>
     </div>
 }
 export default Header

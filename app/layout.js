@@ -17,6 +17,12 @@ export default function RootLayout({ children }) {
     <ClerkProvider
       appearance={{
         baseTheme:shadesOfPurple,
+        variables:{
+          colorPrimary:"#3b82f6",
+          colorBackground:'#1a202c',
+          colorInputBackground:'#2d3748',
+          colorInputText:'#f3f4f6',
+        }
       }}
       >
     <html lang="en">
