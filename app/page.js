@@ -1,10 +1,5 @@
+import Image from "next/image";
 
 export default function Home() {
-  return (
-   <div>
-      <h1>Home Page of ziraclone.com </h1>
-     
-   </div>
-    
-  );
+ return <div>Home</div>
 }
