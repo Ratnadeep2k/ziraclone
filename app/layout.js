@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         
           {/* Footer */}
           <footer className="bg-gray-900 py-12" >
-            <div className="container mx-auto text-center text-white">
+            <div className="container mx-auto text-center text-gray-200">
               <p>&copy; 2024 Zira Clone</p>
             </div>
           </footer>
