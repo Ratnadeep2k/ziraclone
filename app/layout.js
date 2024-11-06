@@ -2,14 +2,15 @@ import Header from "@/components/header";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google"
+import { ClerkProvider } from "@clerk/nextjs";
 const inter =Inter({subsets:["latin"]})
 export const metadata = {
   title: "Zira clone",
   description: "A Project management application for teams",
 };
-
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider >
     <html lang="en">
       <body
         className={`${inter.className}`}
@@ -31,5 +32,6 @@ export default function RootLayout({ children }) {
         
       </body>
     </html>
+    </ClerkProvider>
   );
 }
