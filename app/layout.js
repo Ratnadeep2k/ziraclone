@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google"
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute ="class" defaultTheme ='dark'>
           {/* Header */}
+          <Header/>
           <main className="min-h-screen">
           {children}
           </main>
