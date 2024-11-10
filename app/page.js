@@ -5,13 +5,14 @@ import Link from "next/link";
 
 export default function Home() {
  return (
-    <div>
+    <div className="min-h-secreen">
       {/* HeroSection */}
-      <section>
-        <h1>Streamline your workflow
+      <section className="container mx-auto py-20 text-center">
+        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-extrabold gradient-title pb-6 flex felx-col">
+          Streamline your workflow
           <br />
          <span>
-            with{""}
+            with
             <Image
             src={'/logo.svg'}
             alt="Zira"
@@ -25,6 +26,11 @@ export default function Home() {
         <Link href='/onboarding'>
           <Button  size='lg' className='mr-4'>
             Get Started  <ChevronRight size={18} className="ml-1"/>
+          </Button>
+        </Link>
+        <Link href='#features'>
+          <Button varient='outline' size='lg' className='mr-4'>
+            Learn More <ChevronRight size={18} className="ml-1"/>
           </Button>
         </Link>
       </section>
