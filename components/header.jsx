@@ -8,29 +8,46 @@ import Usermenu from './user-menu'
 
 const Header = () => {
   return (
-    <header className='container mx-auto'>
+    <header className="container mx-auto px-4 md:px-8 lg:px-12">
 
-      <nav className='py-6 px-4 flex justify-between items-center'>
-        <Link href='/'>
-          <Image src="/jira-logo.svg" alt="Logo" width={200} height={56}
-            className='h-10 w-auto object-contain'
+      <nav className="py-4 md:py-6 flex justify-between items-center">
+        {/* Logo */}
+        <Link href="/">
+          <Image
+            src="/jira-logo.svg"
+            alt="Logo"
+            width={150}
+            height={40}
+            className="h-8 md:h-10 w-auto object-contain"
           />
         </Link>
-        <div className='flex items-center gap-4'>
-          <Link href='/project/create'>
-            <Button variant ="destructive" className="flex items-center gap-2">
-              <PenBox size={12}/>
-              Create Project
+
+        {/* Navigation and User Options */}
+        <div className="flex items-center gap-3 sm:gap-4">
+          <Link href="/project/create">
+            <Button variant="destructive" size="sm" className="flex items-center gap-1 sm:gap-2">
+              <PenBox size={16} className="hidden sm:block" />
+              <span className="text-xs sm:text-sm">Create Project</span>
             </Button>
           </Link>
+
+          {/* Authentication Buttons */}
           <SignedOut>
-            <SignInButton forceRedirectUrl='/onboarding'>
-                  <Button variant="outline">Login</Button>
+            <SignInButton forceRedirectUrl="/onboarding">
+              <Button variant="outline" size="sm" className="text-xs sm:text-sm">Login</Button>
             </SignInButton>
           </SignedOut>
           <SignedIn>
-            <Usermenu/>
-            <SignOutButton />
+            {/* User menu with SignOut option for larger screens */}
+            <div className="hidden sm:flex items-center gap-3">
+              <Usermenu />
+              <SignOutButton />
+            </div>
+
+            {/* User button for smaller screens */}
+            <div className="sm:hidden">
+              <UserButton />
+            </div>
           </SignedIn>
         </div>
       </nav>
