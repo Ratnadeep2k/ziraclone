@@ -35,7 +35,7 @@ export default function Home() {
             <span className="flex mx-auto gap-3 sm:gap-4 items-center justify-center mt-4">
               with{" "}
               <Image
-                src="/logo2.png"
+                src="/jira-monochrome-logo.svg"
                 alt="Zira"
                 width={400}
                 height={80}
@@ -67,24 +67,33 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section>
+      <section id="features" className="bg-gray-900 py-20 px-5 border -b">
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold mb-12 text-center">Key Features</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {features.map((feature,index)=>{
-                return (
-                 <Card key={index} className="bg-gray-800 mb-8">
-                 <CardContent className="pt-6">
-                   <feature.icon className="h-12 w-12 mb-4 text-blue-300" />
-                   <h4 className="text-xl font-semibold mb-2">
-                     {feature.title}
-                   </h4>
-                   <p className="text-gray-300">{feature.description}</p>
-                 </CardContent>
-               </Card>
-                )
-              })}
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+      {features.map((feature, index) => (
+        <Card 
+          key={index} 
+          className="bg-gray-800/80 border-gray-700 hover:bg-gray-800/95 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 group relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          
+          <CardContent className="relative p-6 space-y-4">
+            <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <feature.icon className="h-6 w-6 text-blue-400 group-hover:text-blue-300 transition-colors duration-300" />
+            </div>
+            
+            <h4 className="text-xl font-semibold text-white group-hover:text-blue-300 transition-colors duration-300">
+              {feature.title}
+            </h4>
+            
+            <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+              {feature.description}
+            </p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
         </div>
 
       </section>

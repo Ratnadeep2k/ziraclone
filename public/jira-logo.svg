@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
+  <!-- J -->
+  <rect x="0" y="0" width="90" height="90" rx="15" fill="#5850EC"/>
+  <text x="25" y="70" fill="white" font-family="Arial" font-weight="bold" font-size="70">J</text>
+  
+  <!-- I -->
+  <rect x="100" y="0" width="90" height="90" rx="15" fill="#B794F4"/>
+  <text x="135" y="70" fill="white" font-family="Arial" font-weight="bold" font-size="70">I</text>
+  
+  <!-- R -->
+  <rect x="200" y="0" width="90" height="90" rx="15" fill="#F6AD55"/>
+  <text x="225" y="70" fill="white" font-family="Arial" font-weight="bold" font-size="70">R</text>
+  
+  <!-- A -->
+  <rect x="300" y="0" width="90" height="90" rx="15" fill="#48BB78"/>
+  <text x="325" y="70" fill="white" font-family="Arial" font-weight="bold" font-size="70">A</text>
+</svg>

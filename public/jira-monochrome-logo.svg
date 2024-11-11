@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
+  <!-- Letter tiles with consistent styling -->
+  
+  <!-- J -->
+  <g>
+    <rect x="0" y="0" width="90" height="90" rx="15" fill="#6B7280"/>
+    <path d="M45 20 L45 55 Q45 65 40 70 Q35 75 25 75" 
+          stroke="white" 
+          strokeWidth="12" 
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"/>
+  </g>
+  
+  <!-- I -->
+  <g>
+    <rect x="100" y="0" width="90" height="90" rx="15" fill="#6B7280"/>
+    <line x1="145" y1="20" x2="145" y2="70" 
+          stroke="white" 
+          strokeWidth="12" 
+          strokeLinecap="round"/>
+  </g>
+  
+  <!-- R -->
+  <g>
+    <rect x="200" y="0" width="90" height="90" rx="15" fill="#6B7280"/>
+    <path d="M225 20 L225 70 M225 20 Q255 20 255 35 Q255 50 225 50 L255 70" 
+          stroke="white" 
+          strokeWidth="12" 
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"/>
+  </g>
+  
+  <!-- A -->
+  <g>
+    <rect x="300" y="0" width="90" height="90" rx="15" fill="#6B7280"/>
+    <path d="M315 70 L345 20 L375 70 M325 50 L365 50" 
+          stroke="white" 
+          strokeWidth="12" 
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"/>
+  </g>
+</svg>

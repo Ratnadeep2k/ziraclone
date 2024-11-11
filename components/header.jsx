@@ -12,7 +12,7 @@ const Header = () => {
 
       <nav className='py-6 px-4 flex justify-between items-center'>
         <Link href='/'>
-          <Image src="/logo.png" alt="Logo" width={200} height={56}
+          <Image src="/jira-logo.svg" alt="Logo" width={200} height={56}
             className='h-10 w-auto object-contain'
           />
         </Link>
