@@ -68,11 +68,12 @@ export default function Home() {
 
       {/* Features */}
       <section>
-        <div>
-          <h3>Key Features</h3>
-          <div>
+        <div className="container mx-auto">
+          <h3 className="text-3xl font-bold mb-12 text-center">Key Features</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {features.map((feature,index)=>{
-                 <Card key={index} className="bg-gray-800">
+                return (
+                 <Card key={index} className="bg-gray-800 mb-8">
                  <CardContent className="pt-6">
                    <feature.icon className="h-12 w-12 mb-4 text-blue-300" />
                    <h4 className="text-xl font-semibold mb-2">
@@ -81,6 +82,7 @@ export default function Home() {
                    <p className="text-gray-300">{feature.description}</p>
                  </CardContent>
                </Card>
+                )
               })}
           </div>
         </div>
