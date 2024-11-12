@@ -5,8 +5,10 @@ import React from 'react'
 import { Button } from './ui/button'
 import { PenBox } from 'lucide-react'
 import Usermenu from './user-menu'
+import { checkUser } from '@/lib/checkUser'
 
-const Header = () => {
+const Header = async() => {
+  await checkUser();
   return (
     <header className="container mx-auto px-4 md:px-8 lg:px-12">
 
