@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute ="class" defaultTheme ='dark'>
           {/* Header */}
           <Header/>
-          <main className="min-h-screen">
+          <main className="min-h-screen"> 
           {children}
           </main>
         
