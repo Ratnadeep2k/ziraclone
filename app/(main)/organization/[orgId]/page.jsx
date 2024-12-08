@@ -1,5 +1,6 @@
 import { getOrganization } from '@/actions/organization'
 import React from 'react'
+import OrgSwitcher from '@/components/org-switcher'
 
 const Organization = async ({params}) => {
 const {orgId} = params
@@ -14,6 +15,7 @@ if (!organization){
         <h1 className="text-5xl font-bold gradient-title pb-2">
           {organization.name}&rsquo;s Projects
         </h1>
+        <OrgSwitcher/>
       </div>
     
     </div>
