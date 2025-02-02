@@ -7,7 +7,6 @@ A project management application designed to streamline team collaboration and t
 - **User Authentication**: Secure login and registration system.
 - **Project Management**: Create, edit, and delete projects.
 - **Task Tracking**: Assign tasks to team members and monitor progress.
-- **Real-time Notifications**: Stay updated with project changes.
 - **Responsive Design**: Accessible on both desktop and mobile devices.
 
 ## Tech Stack
